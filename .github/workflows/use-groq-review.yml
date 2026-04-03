@@ -1,9 +1,15 @@
 name: PR Review via Reusable Workflow
 
 on:
-  pull_request:
+  pull_request_target:  # <--- FIXED: Allows secrets and write access for forks
     types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+  contents: read
 
 jobs:
   review:
     uses: rasbelikeSOON/prbotfinal/.github/workflows/groq-pr-review.yml@main
+    secrets:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
