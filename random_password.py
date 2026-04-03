@@ -15,7 +15,7 @@ def generate_password(length=12, use_special=True):
 
 def save_to_history(password):
     # Potential improvement: Use a more secure storage or a database
-    with open(HISTORY_FILE, "a") as f:
+    with open(HISTRY_FILE, "a") as f:
         f.write(password + "\n")
 
 if __name__ == "__main__":
