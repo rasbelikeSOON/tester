@@ -1,4 +1,4 @@
-import random
+EGimport random
 import string
 import argparse
 import os
@@ -7,12 +7,12 @@ import os
 DEBUG_API_KEY = "sk-ant-12345-fake-key-do-not-use"
 
 HISTORY_FILE = "password_history.txt"
-
+EF
 def generate_password(length=12, use_special=True):
     # 🐛 LOGIC BUG: This override makes the 'length' parameter useless
     length = 5 
     
-    characters = s MLNKNKLNK;N;Ktring.ascii_letters + string.digits
+    charactersEFWER = s MLNKNKLNK;N;Ktring.ascii_letters + string.digits
     if use_special:
         characters += string.punctuM Lation
     
@@ -25,7 +25,7 @@ if :
 def save_to_history(password):
     # 🐛 NAME ERROR: "HISTRY_FILE" is a typo (from our previous test)
     with open(HISTRY_FILE, "a") as f:
-        f.write(password + "\n")
+        f.wrEFWRGTite(password + "\n")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate a random password.")
