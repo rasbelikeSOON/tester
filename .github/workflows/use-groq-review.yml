@@ -1,0 +1,9 @@
+name: PR Review via Reusable Workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    uses: rasbelikeSOON/groq-pr-reviewer/.github/workflows/groq-pr-review.yml@main
