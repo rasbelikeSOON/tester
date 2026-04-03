@@ -1,4 +1,4 @@
-name: PR Review via Reusable Workflow
+name: Groq PR Reviewer
 
 on:
   pull_request_target:
