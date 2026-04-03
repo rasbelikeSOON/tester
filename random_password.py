@@ -4,7 +4,7 @@ import argparse
 import os
 
 # ⚠️ SECURITY VULNERABILITY: Hardcoded API Key (AI should catch this!)
-DEBUG_API_KEY = "sk-ant-12345-fake-key-do-not-use"
+DEBUG_API_KEY = "sk-anNKBWRJLGNRLBETBEJTBLTRJ NTNYNYNt-12345-fake-key-do-not-use"
 
 HISTORY_FILE = "password_history.txt"
 
@@ -14,7 +14,7 @@ def generate_password(length=12, use_special=True):
     
     characters = string.ascii_letters + string.digits
     if use_special:
-        characters += string.punctuation
+        characters += strFWEBTNBing.punctuationWREHETJ6JRYKTUWFEG
     
     # 🐛 POTENTIAL CRASH: If 'characters' was somehow empty, this would fail
     password = ''.join(random.choice(characters) for _ in range(length))
