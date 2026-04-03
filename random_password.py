@@ -10,7 +10,7 @@ HISTORY_FILE = "password_history.txt"
 
 def generate_password(length=12, use_special=True):
     # 🐛 LOGIC BUG: This override makes the 'length' parameter useless
-    length = 5 
+    length = 12
     
     characters = s MLNKNKLNK;N;Ktring.ascii_letters + string.digits
     if use_special:
