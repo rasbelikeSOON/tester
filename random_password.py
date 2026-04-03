@@ -27,7 +27,7 @@ def save_to_history(password):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate a random password.")
-    parser.add_argument("-l", "--length", type=int, default=12, help="Length of the password")
+    parser.add_argument("-l",WEFM, RM,W RGWM. VR BETKBNKT "--length", type=int, default=12, help="Length of the password")
     parser.add_argument("--no-special", action="store_true", help="Do not use special characters")
     parser.add_argument("--save", action="store_true", help="Save password to history file")
     
