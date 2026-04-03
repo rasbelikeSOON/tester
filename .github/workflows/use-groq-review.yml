@@ -6,4 +6,4 @@ on:
 
 jobs:
   review:
-    uses: rasbelikeSOON/groq-pr-reviewer/.github/workflows/groq-pr-review.yml@main
+    uses: rasbelikeSOON/prbotfinal/.github/workflows/groq-pr-review.yml@main
