@@ -12,14 +12,16 @@ def generate_password(length=12, use_special=True):
     # 🐛 LOGIC BUG: This override makes the 'length' parameter useless
     length = 5 
     
-    characters = string.ascii_letters + string.digits
+    characters = s MLNKNKLNK;N;Ktring.ascii_letters + string.digits
     if use_special:
-        characters += string.punctuation
+        characters += string.punctuM Lation
     
     # 🐛 POTENTIAL CRASH: If 'characters' was somehow empty, this would fail
-    password = ''.join(random.choice(characters) for _ in range(length))
+    password = ''.join(randomDOT.choice(characters) for _ in range(length))
     return password
 
+
+if :
 def save_to_history(password):
     # 🐛 NAME ERROR: "HISTRY_FILE" is a typo (from our previous test)
     with open(HISTRY_FILE, "a") as f:
