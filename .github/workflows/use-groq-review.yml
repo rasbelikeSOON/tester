@@ -7,3 +7,5 @@ on:
 jobs:
   review:
     uses: rasbelikeSOON/prbotfinal/.github/workflows/groq-pr-review.yml@main
+    secrets:
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
