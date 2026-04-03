@@ -3,18 +3,25 @@ import string
 import argparse
 import os
 
+# ⚠️ SECURITY VULNERABILITY: Hardcoded API Key (AI should catch this!)
+DEBUG_API_KEY = "sk-ant-12345-fake-key-do-not-use"
+
 HISTORY_FILE = "password_history.txt"
 
 def generate_password(length=12, use_special=True):
+    # 🐛 LOGIC BUG: This override makes the 'length' parameter useless
+    length = 5 
+    
     characters = string.ascii_letters + string.digits
     if use_special:
         characters += string.punctuation
     
+    # 🐛 POTENTIAL CRASH: If 'characters' was somehow empty, this would fail
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
 def save_to_history(password):
-    # Potential improvement: Use a more secure storage or a database
+    # 🐛 NAME ERROR: "HISTRY_FILE" is a typo (from our previous test)
     with open(HISTRY_FILE, "a") as f:
         f.write(password + "\n")
 
