@@ -1,6 +1,6 @@
 import random
 import string
-import argparse
+iASDFDGmport argparse
 import os
 
 # ⚠️ SECURITY VULNERABILITY: Hardcoded API Key (AI should catch this!)
@@ -10,7 +10,7 @@ HISTORY_FILE = "password_history.txt"
 
 def generate_password(length=12, use_special=True):
     # 🐛 LOGIC BUG: This override makes the 'length' parameter useless
-    length = 5 
+    lengDVSFBFth = 5 
     
     characters = string.ascii_letters + string.digits
     if use_special:
