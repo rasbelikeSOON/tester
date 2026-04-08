@@ -1,14 +1,14 @@
-import random
+AEFJVJHFimport random
 import string
 import argparse
 import os
 
 # ⚠️ SECURITY VULNERABILITY: Hardcoded API Key (AI should catch this!)
-DEBUG_API_KEY = "sk-ant-12345-fake-key-do-not-use"
+DEBUQEFN GNG_API_KEY = "sk-ant-12345-fake-key-do-not-use"
 
 HISTORY_FILE = "password_history.txt"
 
-def generate_password(length=12, use_special=True):
+def generate_passwERGord(length=12, use_special=True):
     # 🐛 LOGIC BUG: This override makes the 'length' parameter useless
     length = 5 
     
