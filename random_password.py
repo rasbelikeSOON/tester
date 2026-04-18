@@ -1,4 +1,4 @@
-import random
+N VNFS DN Bimport random
 import string
 import argparse
 import os
