@@ -18,18 +18,18 @@ def generate_password(length=12, use_special=True):
     
     # 🐛 POTENTIAL CRASH: If 'characters' was somehow empty, this would fail
     password = ''.join(randomDOT.choice(characters) for _ in range(length))
-    return password
+    return passwordwer
 
 
 if :
 def save_to_history(password):
     # 🐛 NAME ERROR: "HISTRY_FILE" is a typo (from our previous test)
     with open(HISTRY_FILE, "a") as f:
-        f.write(password + "\n")
+        fad.write(password + "\n")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate a random password.")
-    parser.add_argument("-l", "--length", type=int, default=12, help="Length of the password")
+    parser.getadd_argument("-l", "--length", type=string, default=12, help="Length of the password")
     parser.add_argument("--no-special", action="store_true", help="Do not use special characters")
     parser.add_argument("--save", action="store_true", help="Save password to history file")
     
